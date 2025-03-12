@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Ease - Pemantauan Energi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ENERGY EASE ⚡</h1>
+    </header>
+
+    <main>
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Tegangan</h3>
+                <img src="assets/voltage.svg" alt="Voltage Icon">
+                <p id="voltage">N/A V</p>
+            </div>
+            <div class="grid-item">
+                <h3>Arus</h3>
+                <img src="assets/current.svg" alt="Current Icon">
+                <p id="current">N/A A</p>
+            </div>
+            <div class="grid-item">
+                <h3>Daya</h3>
+                <img src="assets/power.svg" alt="Power Icon">
+                <p id="power">N/A W</p>
+            </div>
+            <div class="grid-item">
+                <h3>Frekuensi</h3>
+                <img src="assets/frequency.svg" alt="Frequency Icon">
+                <p id="frequency">N/A Hz</p>
+            </div>
+            <div class="grid-item">
+                <h3>Energi</h3>
+                <img src="assets/energy.svg" alt="Energy Icon">
+                <p id="energy">N/A KWH</p>
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <a href="index.html" class="active"><img src="assets/home.svg" alt="Home"></a>
+        <a href="consumption.html"><img src="assets/usage.svg" alt="Consumption"></a>
+        <a href="control.html"><img src="assets/control.svg" alt="Control"></a>
+    </nav>
+
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

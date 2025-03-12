@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energy Ease - Control Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ENERGY EASE ⚡</h1>
+    </header>
+
+    <main>
+        <h2 class="section-title">Control Panel</h2>
+
+        <div class="control-container">
+            <div class="control-item">
+                <h3>Lampu</h3>
+                <button class="toggle-btn" id="lamp-toggle">OFF</button>
+            </div>
+            <div class="control-item">
+                <h3>AC</h3>
+                <button class="toggle-btn" id="ac-toggle">OFF</button>
+            </div>
+            <div class="control-item">
+                <h3>Motor 3 Phase</h3>
+                <button class="toggle-btn" id="motor-toggle">OFF</button>
+            </div>
+        </div>
+    </main>
+
+    <nav>
+        <a href="index.html"><img src="assets/home.svg" alt="Home"></a>
+        <a href="consumption.html"><img src="assets/usage.svg" alt="Consumption"></a>
+        <a href="control.html" class="active"><img src="assets/control.svg" alt="Control"></a>
+    </nav>
+
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
